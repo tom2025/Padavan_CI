@@ -25,7 +25,7 @@ on:
         - RT-AC85P
         - XY-C1
         - RS1200P
-        default: 'RS1200P'
+        default: 'MSG1500-7615'
       plugins:
         description: 'json format string of include configs'
         required: true
@@ -33,7 +33,7 @@ on:
       firmwarever:
         description: 'firmware''s version'
         required: true
-        default: '20220327'
+        default: '20220515'
       busyboxver:
         type: choice
         description: 'busybox''s version'
@@ -63,7 +63,7 @@ env:
   WORK_PATH: /opt/rt-n56u
   TIME_ZONE: Asia/Shanghai
   FIRMWARE_DATEPREFIX: $(date +"%Y%m%d")
-  FIRMWARE_AUTHOR: vb1980
+  FIRMWARE_AUTHOR: Tom
   FIRMWARE_PATH: /opt/firmwares
 jobs:
   build:
